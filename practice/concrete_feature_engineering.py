@@ -1,7 +1,7 @@
 import pandas
 from pandas import DataFrame
 
-from feature_engineering import (
+from utils.feature_engineering import (
     calculate_mutual_info_scores,
     run_principal_component_analysis,
     score_dataset,
@@ -63,7 +63,7 @@ def create_feature_by_transform(data: DataFrame):
     )
 
 
-concrete_file_path = "data/concrete_data.csv"
+concrete_file_path = "../data/concrete_data.csv"
 data = pandas.read_csv(concrete_file_path)
 print(data.head())
 

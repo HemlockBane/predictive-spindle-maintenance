@@ -1,9 +1,9 @@
 import pandas as pd
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
 
-iowa_file_path = "data/iowa_data.csv"
+iowa_file_path = "../data/iowa_data.csv"
 iowa_data = pd.read_csv(iowa_file_path)
 
 target_column = "SalePrice"

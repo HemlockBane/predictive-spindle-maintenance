@@ -1,13 +1,12 @@
 import fuzzywuzzy
-from fuzzywuzzy import process, fuzz
 import numpy
 import pandas
+from fuzzywuzzy import fuzz, process
 from mlxtend.preprocessing import minmax_scaling
 from scipy.stats import stats
 from sklearn.model_selection import train_test_split
 
-
-from data_cleaning import (
+from utils.data_cleaning import (
     drop_problematic_ordinal_columns,
     encode_columns_by_onehot,
     encode_columns_by_ordinal,
@@ -19,7 +18,7 @@ from data_cleaning import (
     print_unique_values_by_column,
 )
 
-iowa_file_path = "data/iowa_data.csv"
+iowa_file_path = "../data/iowa_data.csv"
 iowa_data = pandas.read_csv(iowa_file_path)
 
 # Finding Missing Values

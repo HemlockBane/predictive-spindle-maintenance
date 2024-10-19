@@ -2,7 +2,7 @@ import pandas
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 
-melbourne_file_path = "data/melb_data.csv"
+melbourne_file_path = "../data/melb_data.csv"
 data = pandas.read_csv(melbourne_file_path)
 
 target = data["Price"]

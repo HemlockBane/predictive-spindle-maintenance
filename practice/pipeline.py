@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 
-melbourne_file_path = "data/melb_data.csv"
+melbourne_file_path = "../data/melb_data.csv"
 data = pandas.read_csv(melbourne_file_path)
 
 target = data["Price"]
